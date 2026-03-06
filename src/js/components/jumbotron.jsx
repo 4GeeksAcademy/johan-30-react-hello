@@ -1,5 +1,4 @@
-import React from 'react';
-
+import React from "react";
 const Jumbotron = () => {
     return (
         <div className="mb-4 bg-light rounded-3 mx-5 mt-4">
