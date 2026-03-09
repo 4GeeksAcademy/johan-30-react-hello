@@ -9,7 +9,7 @@ const cards = [];
 
 const Home = () => {
 	return (
-		<div className="text-center">
+		<div className="text-start">
 			<Navbar />
 			<Jumbotron />
 			<div className="container">
