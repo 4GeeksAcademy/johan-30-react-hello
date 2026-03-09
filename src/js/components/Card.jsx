@@ -2,7 +2,7 @@ import React from "react";
 
 const Card = ({ image, title, text, buttonText, buttonLink }) => {
   return (
-    <div className="col-12 col-md-6 col-lg-3 mb-4">
+    
       <div className="card h-100 text-center shadow-sm custom-card">
         <img src={image} className="card-img-top" alt={title} />
 
@@ -22,7 +22,7 @@ const Card = ({ image, title, text, buttonText, buttonLink }) => {
           </a>
         </div>
       </div>
-    </div>
+    
   );
 };
 

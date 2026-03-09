@@ -1,10 +1,18 @@
 import React from "react";
 import Navbar from "./Navbar";
 import Jumbotron from "./Jumbotron";
-import Card from "./card";
-import Footer from "./footer";
+import Card from "./Card";
+import Footer from "./Footer";
 
-const cards = [];
+const Cards = [
+
+	{ image: "https://picsum.photos/seed/picsum/200/300", title:"Card 1", text:"Lorem ipsum dolor sit amet", buttonText:"Find More", buttonLink:"https://picsum.photos/"},
+	{ image: "https://picsum.photos/seed/picsum/200/300", title:"Card 2", text:"Lorem ipsum dolor sit amet", buttonText:"Find More", buttonLink:"https://picsum.photos/"},
+	{ image: "https://picsum.photos/seed/picsum/200/300", title:"Card 3", text:"Lorem ipsum dolor sit amet", buttonText:"Find More", buttonLink:"https://picsum.photos/"},
+	{ image: "https://picsum.photos/seed/picsum/200/300", title:"Card 4", text:"Lorem ipsum dolor sit amet", buttonText:"Find More", buttonLink:"https://picsum.photos/"},
+	
+
+]
 
 
 const Home = () => {
@@ -14,9 +22,9 @@ const Home = () => {
 			<Jumbotron />
 			<div className="container">
 				<div className="row">
-					{cards.map((item, index) => (
+					{Cards.map((item, index) => (
 						<div className="col-12 col-sm-6 col-lg-3 mb-4" key={index}>
-							<Card cards={item} />
+							<Card {...item} />
 						</div>
 					))}
 				</div>
